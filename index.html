@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Laza Iulia-Andreea">
+    <meta name="keywords" content="yoga, clase yoga, cursuri yoga, yoga classes, yoga trainers, yoga cluj">
+    <meta name="description"
+        content="Welcome to Relief Yoga Studio, where serenity meets strength and balance is not just a pose but a way of life. Our yoga studio is a sanctuary for the mind, body, and soul, inviting you to embark on a transformative journey towards holistic well-being.">
+    <title>Relief Yoga Studio</title>
+    <!-- favicon -->
+    <link rel="icon" href="imagini/yoga.png" type="image/x-icon" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Handlee&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<style>
+    nav {
+        background-color: rgba(115, 146, 85, 89);
+    }
+
+    body {
+        margin: 0;
+        background-color: rgba(115, 146, 85, 89);
+        font-family: 'Handlee', cursive;
+    }
+
+    h1,
+    h2 {
+        font-family: 'Courgette', cursive;
+        color: #172815;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    .welcome {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+    }
+
+    .cursivmaimare {
+        font-family: 'Courgette', cursive;
+        color: #172815;
+        font-size: 32px;
+    }
+
+    .accordion {
+        padding: 0px 20px 40px 20px;
+        --bs-accordion-btn-bg: #172815;
+        --bs-accordion-active-bg: rgba(115, 146, 85, 89);
+        --bs-accordion-active-color: #172815;
+        --bs-accordion-bg: rgba(115, 146, 85, 89);
+        --bs-accordion-btn-color: rgba(115, 146, 85, 89);
+        --bs-accordion-btn-focus-box-shadow: none;
+    }
+
+    .accordion h3 {
+        font-family: 'Courgette', cursive;
+        font-size: 25px;
+    }
+
+    .card {
+        background-color: rgba(235, 213, 172, 0.507);
+    }
+
+    .colclass {
+        outline: 1px solid #172815;
+        background-color: #83791b9c;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #172815;
+        border-radius: 40%;
+        border: 1px solid black;
+    }
+
+    button a {
+        color: white;
+    }
+
+    footer {
+        background-color: rgb(37, 65, 34);
+        color: white;
+    }
+
+    footer img {
+        object-fit: contain;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-md main-navbar sticky-top">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a class="nav-link" href="index.html">
+                    <img src="imagini/yoga.png" alt="our logo" width="30" height="30"
+                        class="d-inline-block align-text-top">
+                    Relief Yoga Studio </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meniu"
+                aria-controls="meniu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="meniu">
+                <ul class="nav flex-column flex-md-row">
+                    <li class="navbar-item"><a class="nav-link active link-light" href="#despre-noi">About us</a></li>
+                    <li class="navbar-item"><a class="nav-link active link-light" href="#servicii">Services</a></li>
+                    <li class="navbar-item"><a class="nav-link active link-light" href="#antrenori">Trainers</a></li>
+                    <li class="navbar-item"><a class="nav-link active link-light" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div id="carouselheader" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagini/rainforestyogabig.jpg" class="d-block w-100"
+                        alt="three young women practicing a yoga pose together in a rainforest">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagini/crystalbig.jpg" class="d-block w-100"
+                        alt="two crystals and a miniature statue of buddha in the middle on a table">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagini/sessionbig.jpg" class="d-block w-100"
+                        alt="a group of yoga students in lotus pose on mats during a yoga session">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagini/yogaabroadbig.jpg" class="d-block w-100"
+                        alt="a group of women of colour practicing yoga in a tropical garden">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagini/stonesbig.jpg" class="d-block w-100"
+                        alt="five blue rocks stacked on top of a bigger rock in a stone beach">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselheader" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselheader" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="container welcome p-5">
+        <div class="d-flex welcome p-4">
+            <img class="img-fluid" src="imagini/smilingflower.png"
+                alt="a colorful mandala flower with a smiling face in the middle">
+            <h1>Welcome to Relief Yoga Studio</h1>
+            <img class="img-fluid" src="imagini/smilingflower.png"
+                alt="a colorful mandala flower with a smiling face in the middle">
+        </div>
+        <p>Where serenity meets strength and balance is not just a pose, but a way of life!</p>
+    </div>
+
+    <hr>
+
+    <div id="despre-noi" class="container p-4">
+        <div class="p-3">
+            <h2>Our Mission</h2>
+            <p> Whether you are seeking stress relief, physical fitness, or a deeper connection with yourself, we are
+                here to provide a space where you can find tailored guidance, a supportive community and inner peace.
+            </p>
+        </div>
+
+        <div class="accordion mb-3" id="accordionstory">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="heading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsethis" aria-expanded="true" aria-controls="collapsethis">
+                        <h3>Our Story</h3>
+                    </button>
+                </h3>
+                <div id="collapsethis" class="accordion-collapse collapse show" aria-labelledby="heading"
+                    data-bs-parent="#accordionstory">
+                    <div class="accordion-body">
+                        <p> Since 2003, our mission has been to make yoga accessible for anyone and to create a
+                            welcoming
+                            and inclusive space. It all began with a small, humble studio tucked away in the heart of a
+                            bustling city. Founded by a passionate yogi named Sarah, the studio started with just a
+                            handful
+                            of students eager to explore the practice of yoga.</p>
+                        <p>In the early days, the studio started humbly, with a few dedicated instructors offering
+                            classes
+                            in a modest space. The community grew steadily as word spread about our studio, one where
+                            everyone, regardless of age, appearance, sexuality, fitness level or experience, could find
+                            solace and strength on their yoga mats.</p>
+                        <p>In 2010, the studio expanded, moving to a larger space to accommodate the growing community.
+                            This
+                            new location allowed additional workshops and specialized courses. Sarah's dream of
+                            inclusivity
+                            became even more tangible as the studio welcomed individuals with diverse backgrounds and
+                            abilities.</p>
+                        <p>In 2015, we took a bold step forward by embracing a new opportunity: that of taking part in
+                            yoga
+                            trips within the YogaEverywhere program. And since then, our studio has evolved so much that
+                            we
+                            have been able to even organize our own trips!</p>
+                        <p>In 2018, as Sarah arrives to the studio doors one rainy morning, she notices a tiny cat that
+                            found refuge under our stairs. After days of gentle coaxing and leaving out food, the once
+                            wary
+                            cat became a cherished studio companion. Since then, Yogi Whiskerpaws' presence has become a
+                            symbol of the unexpected joys that unfold when openness and compassion guide your journey.
+                        </p>
+                        <p>In 2020, faced with unprecedented challenges, our community stood strong. The global pandemic
+                            forced us to adapt and innovate. Live-streamed classes, virtual workshops and an enhanced
+                            online
+                            community became prioritary. Through these changes, we discovered new ways to connect,
+                            support
+                            one another, and foster a sense of unity in a time of physical distance.</p>
+                        <p>Now, in 2023, our yoga studio stands as a testament to the power of resilience and community.
+                            The
+                            journey from a small, local studio to a globally connected community has been marked by
+                            unwavering dedication to our mission. As we look ahead, we remain committed to making yoga
+                            accessible to all, ensuring that our welcoming and inclusive space continues to be a source
+                            of
+                            inspiration, healing, and transformation for many years to come.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="cursivmaimare">Be welcomed with a Meow!</h3>
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <img class="img-fluid rounded mx-auto d-block m-3" src="imagini/whiskerpaws.jpg"
+                        alt="a brown striped cat yawning while stretching">
+                </div>
+                <div class="col-sm-12 col-md-9 col-lg-9 d-flex align-items-center">
+                    <p> Yogi Whiskerpaws is our resident trainer since 2018. But she isn't your typical yoga instructor;
+                        Yogi Whiskerpaws brings a whole new meaning to the art of cat
+                        poses and mindful stretches. Watch in awe as Yogi Whiskerpaws effortlessly demonstrates the true
+                        essence
+                        of cat-asanas. From the graceful "Upward Feline" to the meditative "Paw-sana," each movement is
+                        a lesson
+                        in fluidity and grace. Prepare to be inspired by the master of the mat!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="d-flex justify-content-center">
+                <h3 class="cursivmaimare">Want to join our yoga family?</h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button><a href="#contact">Contact Us!</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <div id="servicii" class="container p-4">
+        <h2>Our Services</h2>
+        <p> We offer a wide variety of classes for all types of yoga students. So, whether you are a beginner, advanced
+            or yoga master, we are confident that one of our classes will be the best for you!</p>
+
+        <div class="row pb-3">
+            <div class="col-sm-12 col-md-6 col-lg-3 card colclass p-3 g-3">
+                <h3 class="cursivmaimare">Online group classes</h3>
+                <img class="mb-2" src="imagini/management.png"
+                    alt="three icons of a person surrounded by a circle connected in the shape of a peace sign">
+                <h4>Connect, Breathe, Thrive</h4>
+                <h4 class="cursivmaimare">100 lei/student</h4>
+                <p>
+                    Our online group sessions foster a sense of togetherness, allowing you to connect with fellow
+                    participants, share experiences, and collectively deepen your practice.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 card colclass p-3 g-3">
+                <h3 class="cursivmaimare">Online private classes</h3>
+                <img src="imagini/yogaathome.png"
+                    alt="an icon of a person doing yoga in front of a laptop inside their home">
+                <h4>Yoga Anywhere, Anytime</h4>
+                <h4 class="cursivmaimare">120 lei/student</h4>
+                <p>
+                    No need to
+                    commute or adhere to a rigid schedule. Our online classes provide the freedom to roll out your
+                    mat anytime, bringing the serenity of yoga into your daily routine.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 card colclass p-3 g-3">
+                <h3 class="cursivmaimare">Studio group classes</h3>
+                <img src="imagini/team.png" alt="an icon of three people meditating in lotus pose">
+                <h4>Strength in Unity</h4>
+                <h4 class="cursivmaimare">150 lei/student</h4>
+                <p>In our
+                    classes, unity is not just a concept; it's a palpable force that amplifies the benefits of
+                    each
+                    pose, creating a harmonious energy that resonates throughout the room.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 card colclass p-3 g-3">
+                <h3 class="cursivmaimare">Studio private classes</h3>
+                <img src="imagini/face-to-face.png" alt="an icon of two faces one in front of the other">
+                <h4>Connect One-to-One</h4>
+                <h4 class="cursivmaimare">180 lei/student</h4>
+                <span class="badge rounded-pill text-bg-danger p-2 mb-2">Special Offer!</span>
+                <p>These intimate sessions allow for a deeper connection, ensuring that each breath, posture,
+                    and
+                    meditation is curated to align with your individual goals.
+                </p>
+            </div>
+        </div>
+
+        <p>* For studio classes, we will provide all the materials needed. The only things that we encourage our clients
+            to bring are comfortable clothes and a bottle of water!
+        </p>
+
+        <div class="accordion m-5" id="accordionstory">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="heading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsethis" aria-expanded="true" aria-controls="collapsethis">
+                        <h3>Gift Cards</h3>
+                    </button>
+                </h3>
+                <div id="collapsethis" class="accordion-collapse collapse show" aria-labelledby="heading"
+                    data-bs-parent="#accordionstory">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-6 col-lg-3 card colclass p-3">
+                                <h4 class="cursivmaimare">Turtle</h4>
+                                <img class="mb-1" src="imagini/turtle.png" alt="an icon of a turtle">
+                                <h5>Mindful Movement</h5>
+                                <h5 class="cursivmaimare">200 lei</h5>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3 card colclass p-3">
+                                <h4 class="cursivmaimare">Rabbit</h4>
+                                <img class="mb-2" src="imagini/rabbit.png" alt="an icon of a rabbit sitting">
+                                <h5>Hop into Harmony</h5>
+                                <h5 class="cursivmaimare">500 lei</h5>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3 card colclass p-3">
+                                <h4 class="cursivmaimare mt-4">Dove</h4>
+                                <img class="mb-2" src="imagini/dove.png"
+                                    alt="an icon of a dove flying with an olive branch in it's beak">
+                                <h5>Fly to Inner Peace</h5>
+                                <h5 class="cursivmaimare">800 lei</h5>
+                                <span class="badge rounded-pill text-bg-danger p-2">-20% !</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <div id="antrenori" class="container p-4">
+        <h2 class="mb-5">Meet Our Dedicated Staff</h2>
+        <div class="row g-3">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <img class="rounded img-fluid mx-auto d-block m-3" src="imagini/sarah.jpg"
+                                alt="a woman smiling, she has long brown hair and wears a white shirt with green triangles">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="card-body">
+                                <h3 class="cursivmaimare">Sarah, CEO</h3>
+                                <h4 class="card-body">"I wanted to pass on the joy and peace that yoga brought to me
+                                    throughout the years."
+                                </h4>
+                            </div>
+                        </div>
+                        <p>
+                            As a CEO, Sarah encourages a collaborative and supportive environment within the center. She
+                            believes in
+                            the transformative power of yoga and is driven by the mission to make it accessible to
+                            everyone. Sarah's
+                            leadership style is characterized by empathy, open communication and a genuine concern for
+                            the personal
+                            growth of both her staff and clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <img class="rounded img-fluid mx-auto d-block m-3" src="imagini/leah.jpg"
+                                alt="a woman smiling, she has long blonde hair and wears a casual grey shirt and a golden necklace">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="card-body">
+                                <h3 class="cursivmaimare">Leah, Instructor for Beginners</h3>
+                                <h4 class="card-body">"Anyone can master this practice and become more at peace with
+                                    themselves"</h4>
+                            </div>
+                        </div>
+                        <p>
+                            Leah's classes are a blend of foundational poses, mindful breathing exercises, and a touch
+                            of humor to
+                            lighten the mood, taking the time to explain each posture properly. Leah's emphasis on
+                            proper alignment
+                            and the importance of listening to one's body fosters a safe and nurturing environment for
+                            those taking
+                            their first steps into yoga.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <img class="rounded img-fluid mx-auto d-block m-3" src="imagini/jason.jpg"
+                                alt="a man smiling, she has short brown hair and a beard and wears a grey turtleneck">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="card-body">
+                                <h3 class="cursivmaimare">Jason, Yoga Master</h3>
+                                <h4 class="card-body">"Yoga gives you the continuous opportunity to learn something new"
+                                </h4>
+                            </div>
+                        </div>
+                        <p>
+                            Despite his profound expertise, Jason is a humble and approachable teacher who firmly
+                            believes that the
+                            path of learning in yoga is infinite. His classes are a blend of challenging poses, mindful
+                            breathwork,
+                            and philosophical insights. Jason encourages his students to embrace the process,
+                            acknowledging that each
+                            day on the mat is an opportunity for growth and discovery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <img class="rounded img-fluid mx-auto d-block m-3" src="imagini/hannah.jpg"
+                                alt="a woman smiling, she has long brown hair and wears a blue t-shirt">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="card-body">
+                                <h3 class="cursivmaimare">Hannah, Advanced Yoga Trainer</h3>
+                                <h4 class="card-body">"Yoga was my anchor during challenging times"
+                                </h4>
+                            </div>
+                        </div>
+                        <p>
+                            In her sessions, Hannah creates an atmosphere of encouragement.
+                            Her classes go beyond the physical postures, weaving in elements of self-reflection and
+                            personal empowerment. Hannah
+                            is known for tailoring her teachings to each student's unique needs, recognizing that
+                            everyone's journey
+                            in yoga is transformative in its own way.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion m-5 pt-3" id="accordionstory">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="heading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsethis" aria-expanded="true" aria-controls="collapsethis">
+                        <h3>Want to join as a yoga trainer?</h3>
+                    </button>
+                </h3>
+                <div id="collapsethis" class="accordion-collapse collapse show" aria-labelledby="heading"
+                    data-bs-parent="#accordionstory">
+                    <div class="accordion-body">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-sm-12 col-md-12 col-lg-3 mb-3 me-2 d-flex justify-content-center">
+                                <img class="rounded img-fluid mx-auto" src="imagini/meditation.jpg"
+                                    alt="a woman dressed in white meditating in lotus pose in a garden">
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-9">
+                                <h4>Here's what you need to know!</h4>
+                                <p>
+                                    The process begins with a comprehensive orientation session where new
+                                    trainers
+                                    are introduced to the studio's philosophy, values, and teaching methodologies.
+                                    Following this, trainers undergo a mentorship program where they
+                                    shadow experienced instructors, gaining insights into class management, cueing
+                                    techniques, and student engagement. Additionally, new trainers participate in
+                                    workshops
+                                    focused on enhancing their understanding of various yoga styles, anatomy, and
+                                    mindfulness practices. To ensure ongoing development, regular feedback sessions and
+                                    check-ins are conducted to address any concerns or questions. By fostering a
+                                    supportive
+                                    and collaborative environment, we aim to empower our new trainers to deliver
+                                    high-quality yoga experiences that align with our studio's vision of holistic
+                                    well-being.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <div id="contact" class="container p-4">
+        <h2>Contact Us</h2>
+        <div class="row p-2 mt-4 mb-4">
+            <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div>
+                    <img src="imagini/phone-call.png" alt="an icon of a phone calling">
+                    <p>07xxxxxxxx</p>
+                    <p>0359xxxxxx</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div>
+                    <img src="imagini/mail.png" alt="an icon of an envelope">
+                    <p>xxxcontact@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div>
+                    <img src="imagini/location.png" alt="an icon of a location pin">
+                    <p>Street xx, Number x, Cluj-Napoca, Romania</p>
+                    <p> We are open from 10am to 18pm each day of the week</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <iframe class="w-100 mb-5"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5977.602591508517!2d23.58545065463192!3d46.76807753291837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1701898564394!5m2!1sen!2sro"
+                height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="container mt-5 mb-5">
+            <h3 class="cursivmaimare">See what our clients think</h3>
+            <div class="row g-3 mt-2">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card p-3">
+                        <div>
+                            <img class="rounded img-fluid mx-auto d-block mb-2" src="imagini/carol.jpg" alt="an old woman with long red hair wearing a black shirt">
+                            <h4>Carol, doctor</h4>
+                            <p class="card-body">"Medicine mends the body, but yoga heals the soul. I've
+                                witnessed the power of
+                                science, but it was on the yoga mat that I discovered the art of true self-care. In the
+                                stillness of each pose, I found a rhythm that resonated with the beating of my own
+                                heart. For me, yoga was the best prescription"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card p-3">
+                        <div>
+                            <img class="rounded img-fluid mx-auto d-block mb-2" src="imagini/dan.jpg"
+                                alt="a young man with brown curly hair wearing eyeglasses and a patterned blue shirt">
+                            <h4>Dan, musician</h4>
+                            <p class="card-body">"In the harmonies of yoga and meditation, I discovered not only
+                                relaxation
+                                but an orchestra of
+                                inspiration. Your studio is my sanctuary. Also, the presence of Whiskerpaws adds a purrfect touch, making every session a
+                                symphony
+                                of
+                                serenity and artistic revelation."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card p-3">
+                        <div>
+                            <img class="rounded img-fluid mx-auto d-block mb-2" src="imagini/jessica.jpg"
+                                alt="a mid age woman laughing; she has black hair wearing eyeglasses and a grey cardigan">
+                            <h4>Jessica, sales agent</h4>
+                            <p class="card-body">"In the hustle of sales targets and monotony, your yoga studio became
+                                my
+                                oasis of rejuvenation.
+                                Each class isn't just a stretch; it's a breath of fresh air. Your studio is the break I
+                                needed
+                                from the boredom, a place where I trade stress for serenity, and quotas for quietude."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card p-3">
+                        <div>
+                            <img class="rounded img-fluid mx-auto d-block mb-2" src="imagini/alex.jpg"
+                                alt=" a young man with black hair wearing eyeglasses and a grey t-shirt">
+                            <h4>Alex, programmer</h4>
+                            <p class="card-body">"As a programmer, I found a different kind of
+                                flow at Relief Yoga Studio.
+                                This experience was not just a stretch for the body, it was a soothing pause for the mind... Yoga here
+                                isn't like a
+                                workout, it's a perfect syntax for balancing the
+                                demands
+                                of a
+                                digital world with the calm of a quiet mat."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="p-4">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-start">
+                <div>
+                    <p>Contact</p>
+                    <p>07xxxxxxxx</p>
+                    <p>0359xxxxxx</p>
+                    <p>xxxcontact@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <div>
+                    <p class="d-flex justify-content-end">Follow us on</p>
+                    <a class="img-fluid me-2" href="https://www.instagram.com/" target="_blank"><img
+                            src="imagini/instagram.png" alt="the logo of instagram in a circle"></a>
+                    <a class="img-fluid me-2" href="https://www.facebook.com/" target="_blank"><img
+                            src="imagini/facebook.png" alt="the logo of facebook in a circle"></a>
+                    <a class="img-fluid me-2" href="https://www.tiktok.com/en/" target="_blank"><img
+                            src="imagini/tiktok.png" alt="the logo of tiktok in a circle"></a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <img class="me-3" src="imagini/yoga.png" alt="our logo">
+            <div class="mt-3">
+                <p>Relief Yoga Studio © 2023</p>
+                <p>All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
